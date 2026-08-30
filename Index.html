@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CartCompare - Compare Quick Commerce Prices</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            Cart<span>Compare</span>
+        </div>
+
+        <div class="location">
+            📍 Ahmedabad
+        </div>
+
+        <button class="cart-button" onclick="openCart()">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero">
+
+            <h1>
+                Where is your basket <span>cheapest?</span>
+            </h1>
+
+            <p>
+                Compare prices across quick-commerce platforms
+                and find the best deal.
+            </p>
+
+
+            <!-- SEARCH -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a product... e.g. Tomato 1 kg"
+                >
+
+                <button onclick="searchProduct()">
+                    Compare
+                </button>
+
+            </div>
+
+
+            <p class="search-hint">
+                Try: Tomato 1 kg, Milk 1 L, Onion 1 kg
+            </p>
+
+        </section>
+
+
+        <!-- SEARCH RESULTS -->
+
+        <section class="results-section">
+
+            <div class="section-heading">
+
+                <h2>Compare Prices</h2>
+
+                <span id="resultText">
+                    Search for a product
+                </span>
+
+            </div>
+
+
+            <div id="productResults" class="product-results">
+
+                <!-- Products will appear here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- CART -->
+
+        <section id="cartSection" class="cart-section">
+
+            <div class="section-heading">
+
+                <h2>Your Basket</h2>
+
+                <span id="cartTotal">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <div id="cartItems">
+
+                <p class="empty-cart">
+                    Your basket is empty.
+                </p>
+
+            </div>
+
+
+            <div id="cartSummary" class="cart-summary">
+
+                <!-- Cart summary will appear here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            CartCompare
+        </div>
+
+        <p>
+            Compare. Choose. Buy.
+        </p>
+
+        <p class="copyright">
+            © 2026 CartCompare
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
